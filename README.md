@@ -7,30 +7,27 @@
 <script>
   var c;
   var count = 0;
+
 function changemain(){
  var body = document.getElementById('root');
- body.style.backgroundColor = "red";
- change();
+@@ -14,8 +15,9 @@
 }
+
   function change(){
   count += 1;
   c=document.getElementById('counter');
+   c.innerHTML="<h1>hello</h1>";
    c.innerHTML=`<h1>${count}</h1>`;
-  }
-
-  function reset(){
-    count = 0;
-    c=document.getElementById('counter');
-    c.innerHTML=`<h1>${count}</h1>`;
   }
 </script>
   </head>
   <body id="root">
-@@ -27,6 +33,7 @@
+    <center>
+    <div class="#">
     <div id="counter">
     </div>
     <button type="button" name="button" onclick=changemain()>click here</button>
-    <button type="button" name="button" onclick="reset()">RESET</button>
     </div>
     </center>
   </body>
+</html>
